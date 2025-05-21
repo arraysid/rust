@@ -58,3 +58,12 @@ fn test_arrays() {
 
     println!("arrays is {} long", array.len())
 }
+
+#[allow(dead_code)]
+const MINIMUM: i8 = 0;
+
+#[test]
+fn test_const() {
+    const MAXIMUM: i8 = 5;
+    println!("Minimum: {}, Maximum: {}", MINIMUM, MAXIMUM)
+}
