@@ -41,3 +41,20 @@ fn test_unit() {
     let result = unit();
     println!("{:?}", result)
 }
+
+#[test]
+fn test_arrays() {
+    let mut array: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("{:?}", array);
+
+    let a = array[0];
+    let b = array[1];
+
+    println!("{} {}", a, b);
+
+    array[0] = 10;
+
+    println!("{:?}", array);
+
+    println!("arrays is {} long", array.len())
+}
