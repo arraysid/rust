@@ -3,7 +3,7 @@ fn main() {
 }
 
 #[test]
-fn hello_test() {
+fn test_hello() {
     println!("Hello unit test");
 }
 
@@ -19,5 +19,14 @@ fn test_mutable() {
     println!("{}", name);
 
     name = "Rasyid";
+    println!("{}", name)
+}
+
+#[test]
+fn test_shadowing() {
+    let name = "Rasyid";
+    println!("{}", name);
+
+    let name = 1234;
     println!("{}", name)
 }
