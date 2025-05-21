@@ -30,3 +30,14 @@ fn test_shadowing() {
     let name = 1234;
     println!("{}", name)
 }
+
+#[allow(dead_code)]
+fn unit() {
+    println!("test_unit")
+}
+
+#[test]
+fn test_unit() {
+    let result = unit();
+    println!("{:?}", result)
+}
