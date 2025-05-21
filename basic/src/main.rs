@@ -67,3 +67,13 @@ fn test_const() {
     const MAXIMUM: i8 = 5;
     println!("Minimum: {}, Maximum: {}", MINIMUM, MAXIMUM)
 }
+
+#[test]
+fn test_inner_scope() {
+    println!("Minimum: {}", MINIMUM);
+
+    {
+        const AVERAGE: f32 = 2.5;
+        println!("{} {}", AVERAGE, MINIMUM)
+    }
+}
